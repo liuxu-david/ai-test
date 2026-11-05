@@ -1,2 +1,44 @@
+# ---- 依赖 ----
 node_modules/
+
+# ---- 环境变量 / 密钥（严禁提交）----
 .env
+.env.*
+*.env
+!.env.example
+
+# ---- Milvus 数据卷（docker compose 挂载的本地存储）----
+milvus/volumes/
+
+# ---- 大体积二进制测试数据 ----
+*.epub
+
+# ---- 日志 ----
+*.log
+logs/
+npm-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ---- 构建产物 ----
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# ---- 缓存 ----
+.cache/
+.eslintcache
+
+# ---- 编辑器 / IDE ----
+.vscode/
+.idea/
+*.swp
+
+# ---- 操作系统 ----
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---- Claude Code 本地配置 ----
+.claude/settings.local.json
